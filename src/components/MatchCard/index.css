@@ -1,1 +1,46 @@
 /* Write your CSS here */
+.list-card {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #0f172a;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+@media screen and (min-width: 768px) {
+  .list-card {
+    width: 35%;
+  }
+}
+.match-image {
+  height: 100px;
+  width: 100px;
+}
+.match-name {
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  text-align: center;
+}
+.result {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+.status {
+  font-size: 18px;
+  font-family: 'Bree Serif';
+}
+.Won {
+  color: #18ed66;
+}
+.Lost {
+  color: #e31a1a;
+}

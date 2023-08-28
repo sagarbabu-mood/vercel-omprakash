@@ -5,19 +5,19 @@ import {Component} from 'react'
 
 class MatchCard extends Component {
   render() {
-    const {teamMatchList} = this.props
+    const {recentMatches} = this.props
     const {
       result,
       competingTeam,
       competingTeamLogo,
       matchStatus,
-    } = teamMatchList
+    } = recentMatches
 
     return (
-      <li className="list-card">
+      <li className={`list-card ${matchStatus}`}>
         <img
           src={competingTeamLogo}
-          alt="competingTeam"
+          alt={`competingTeam ${competingTeam}`}
           className="match-image"
         />
         <p className="match-name">{competingTeam}</p>
