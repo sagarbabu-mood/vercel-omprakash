@@ -14,7 +14,7 @@ class MatchCard extends Component {
     } = recentMatches
 
     return (
-      <li className={`list-card ${matchStatus}`}>
+      <li className="list-card">
         <img
           src={competingTeamLogo}
           alt={`competingTeam ${competingTeam}`}
@@ -22,7 +22,7 @@ class MatchCard extends Component {
         />
         <p className="match-name">{competingTeam}</p>
         <p className="result">{result}</p>
-        <p className="status">{matchStatus}</p>
+        <p className={matchStatus}>{matchStatus}</p>
       </li>
     )
   }

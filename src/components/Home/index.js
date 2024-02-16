@@ -4,7 +4,6 @@ import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import TeamCard from '../TeamCard'
 
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import './index.css'
 
 class Home extends Component {
@@ -39,7 +38,7 @@ class Home extends Component {
   }
 
   renderLoader = () => (
-    <div className="loader-container">
+    <div className="loader-container" data-testid="loader">
       <Loader type="Oval" color="#ffffff" height={50} width={50} />
     </div>
   )
@@ -55,7 +54,7 @@ class Home extends Component {
               alt="ipl logo"
               className="logo"
             />
-            <p className="heading">IPL Dashboard</p>
+            <h1 className="heading">IPL Dashboard</h1>
           </div>
           {isLoading ? this.renderLoader() : this.renderTeamsList()}
         </div>
