@@ -10,9 +10,8 @@
 }
 
 .latest-match-card {
-  
   display: flex;
- 
+
   flex-direction: column;
   background-color: #0f172a;
   border-radius: 12px;
@@ -22,11 +21,10 @@
 
 @media screen and (min-width: 768px) {
   .latest-match-card {
-  
     flex-direction: row;
-  
+
     justify-content: space-between;
-   
+
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -34,7 +32,6 @@
 }
 
 .latest-match-details-logo-container {
- 
   display: flex;
 
   align-items: center;
@@ -66,7 +63,7 @@
 @media screen and (min-width: 768px) {
   .latest-match-details-1 {
     width: 48%;
-    
+
     align-self: flex-start;
   }
 }

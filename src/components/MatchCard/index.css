@@ -18,11 +18,11 @@
   width: 50px;
 }
 @media screen and (min-width: 768px) {
-    .list-card {
-        width:30%;
-        padding: 24px;
-        margin-bottom: 32px
-    }
+  .list-card {
+    width: 30%;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
   .match-image {
     height: 80px;
     width: 80px;
